@@ -29,6 +29,18 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivide_Success()
+    {
+        assertEquals(4,calc.divide(16,4));
+    }
+
+    @Test
+    public void testMultiply_Success()
+    {
+        assertEquals(64,calc.multiply(16,4));
+    }
+
+    @Test
     public void testAdd_Fail()
     {
         Exception ex = assertThrows(ArithmeticException.class, ()-> calc.add(Integer.MAX_VALUE, 1));
@@ -40,6 +52,20 @@ public class CalculatorTest {
     {
         Exception ex = assertThrows(ArithmeticException.class, ()-> calc.subtract(Integer.MIN_VALUE, 1));
         assertEquals("Integer Underflow",ex.getMessage());
+    }
+
+    @Test
+    public void testDivide_Fail()
+    {
+        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.divide(Integer.MAX_VALUE, 0));
+        assertEquals("Divide by zero",ex.getMessage());
+    }
+
+    @Test
+    public void testMultiply_Fail()
+    {
+        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.multiply(Integer.MAX_VALUE, 2));
+        assertEquals("Integer Overflow",ex.getMessage());
     }
 
 
