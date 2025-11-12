@@ -1,17 +1,17 @@
 package ie.atu.week8;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        /*
+        Calculator calc = new Calculator();
+        int total1 = calc.add(Integer.MAX_VALUE, 2);
+        int total2 = calc.subtract(Integer.MAX_VALUE, 2);
+        int total3 = calc.divide(Integer.MAX_VALUE, 2);
+        int total4 = calc.multiply(Integer.MAX_VALUE, 2);
+        System.out.println("Addition Total is: " + total1);
+        System.out.println("Subtraction Total is: " + total2);
+        System.out.println("Division Total is: " + total3);
+        System.out.println("Multiplication Total is: " + total4);
+         */
     }
 }
